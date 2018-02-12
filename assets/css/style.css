@@ -1,0 +1,307 @@
+body {
+    margin: 0 0 80px 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete_seamless.png");
+}
+
+/* these suck, but in many, many attempts at setting margins of various elements, I could not find an effective way to maintain bottom margin. */
+
+.contact {
+    height: 810px;
+}
+
+.portfolio {
+    height: 1150px;
+}
+
+/* .index {
+    height: 1670px;
+} */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+    padding: 2px;
+    color: #777777;
+}
+
+li a {
+    border-right: 1px solid #ccc;
+    color: #999;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+li:first-child a {
+    border-right: 0px solid white;
+}
+
+li a:hover:not(.active) {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    color: #cccccc;
+    background-color: #666666;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    border-top: 8px solid #4aaaa5;
+    margin-top: 100px;
+}
+
+hr {
+    border-top: 2px solid rgb(185, 185, 185);
+}
+
+#header-bar {
+    background-color: white;
+    border-bottom: 2px solid #cccccc;
+}
+
+#header-menu {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 67px;
+}
+
+#portfolio-name {
+    float: left;
+    background: #4aaaa5;
+    padding: 18px 18px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20.5pt;
+    color: white;
+    font-weight: bolder;
+    font-stretch: expanded;
+}
+
+.content-wrapper {
+    width: 1020px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.main-panel {
+    float: left;
+    width: 610px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    margin-bottom: 120px;
+}
+
+.side-bar {
+    float: right;
+    width: 240px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+}
+
+.social-box {
+    width: 215px;
+    padding: 0;
+}
+
+.social-icon a {
+    color: #777777;
+    text-decoration: none;
+    border-right: 0px solid #ccc;
+    padding: 39px 0px 2px 1px;
+}
+
+.heading {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    font-weight: bolder;
+    font-stretch: expanded;
+}
+
+.paragraph-text {
+    color: #777777;
+    line-height: 25pt;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.nav-menu {
+    overflow: hidden;
+}
+
+.mug-shot {
+    max-width: 230px;
+    height: 150px;
+    float: left;
+    padding: 15px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 6px 0 16px 0;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #dddddd;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #ddd;
+    color: #4aaaa5;
+}
+
+.container {
+    padding: 20px 0;
+}
+
+.portfolio-image {
+    width: 260px;
+    height: 200px;
+}
+
+.portfolio-overlay {
+    height: 30px;
+    width: 260px;
+    background-color: #4aaaa5;
+    position: relative;
+}
+
+.portfolio-text {
+    color: #fff;
+    position: relative;
+    top: -75px;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+}
+
+.grid-item {
+    padding: 30px 20px;
+    height: 200px;
+}
+
+/* if less than 980 pixels */
+
+@media only screen and (max-width: 980px) {
+    .main-panel {
+        width: 45%;
+        margin: 0 30px 110px 15px;
+    }
+    .side-bar {
+        float: left;
+        width: 30%;
+    }
+    .social-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .content-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 260px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .side-bar {
+        float: left;
+        width: 82%;
+        margin: 0 0 110px 20px;
+        padding: 20px;
+    }
+    .social-box {
+        width: 100%;
+    }
+    .main-panel {
+        float: left;
+        width: 82%;
+        margin: 0 0 30px 20px;
+    }
+    .content-wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .nav-menu {
+        clear: both;
+        background-color: #fff;
+    }
+    #header-menu {
+        width: 100%;
+        margin: 0 auto;
+        height: 67px;
+    }
+    #portfolio-name {
+        width: 100%;
+        background: #4aaaa5;
+        padding: 18px 18px;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        font-size: 20.5pt;
+        color: white;
+        font-weight: bolder;
+        font-stretch: expanded;
+        text-align: center;
+    }
+    .mug-shot {
+        clear: both;
+        max-width: 352px;
+        max-height: 180px;
+        padding: 15px;
+    }
+    li {
+        padding: 2px;
+        margin: auto auto;
+        color: #777777;
+    }
+    li a {
+        border-right: 1px solid #ccc;
+        color: #999;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+    li:first-child a {
+        border-right: 0px solid white;
+    }
+    .paragraph-text {
+        color: #777777;
+        line-height: 15pt;
+        clear: both;
+    }
+}
